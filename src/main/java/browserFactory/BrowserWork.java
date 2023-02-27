@@ -23,22 +23,5 @@ public class BrowserWork {
         return driver = BrowserFactory.getBrowserType(Constants.BROWSER);
     }
 
-  /*  public void maximize(){
-      //  driverWait();
-        getDriver().manage().window().maximize();
-    }
-    public void toNavigate(String path){
-      //  driverWait();
-        getDriver().navigate().to(path);
-    }
-
-    public void quit(){
-        getDriver().quit();
-    }
-
-    public void driverWait(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }*/
-
 }
 

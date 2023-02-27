@@ -27,6 +27,11 @@ public class SearchPage {
         return logo.getAttribute("href");
     }
 
+    public void searchText(WebDriver web, String text){
+        web.findElement(SEARCH_TEXT).sendKeys(text);
+        web.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        web.findElement(SEARCH_BUTTON).click();
+    }
     //*[@class='home-link home-logo__link']
     //*[@id='text']
     //*[@class='search2__button']/button

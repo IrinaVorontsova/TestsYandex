@@ -18,6 +18,8 @@ public class SomeTest extends BaseTest{
 
         Assert.assertTrue(searchPage.isPageCorrect(web), "This page is not yandex");
 
+        searchPage.searchText(web, Constants.SEARCH_WORD);
+        System.out.println("It's ok");
 
     }
 
